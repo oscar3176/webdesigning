@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Science Club</title>
+        <link rel = "shortcut icon" href = "science_logo.jpg">
+        <script src="main.js"></script>
+        <link rel = "stylesheet", href = "all_style.css">
+    </head>
+<body id="body1", onload="load_quiz()">
+    <button id="back", onclick="back()"><img id="back1", src="goback.png"></button>
+    <h1 style="font-size: 70px; margin-right: 65px; font-family: algerian; font-weight: 500; font-style: italic; color: white;"><u>Science Quiz</u></h1>
+    <br>
+    <br>
+<div id="yay", style="display: none;">
+    <img style="font-size: 70px; font-weight: lighter; border-radius: 40px;", src="congrats.gif", id="yayy">
+    <h1 id="answerTHIS", style="margin-top: 30px; font-family: agency fb; font-size: 50px; color: white;"></h1>
+    <button onclick="restart()", style="font-size: 40px; font-family: Castellar; color: black; background: linear-gradient(rgb(251, 138, 157), rgb(255, 60, 93), rgb(251, 138, 157)); cursor: pointer; border-radius: 20px;", id="re">Restart</button>
+</div>
+<div id="something">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 1: What transports food throughout the plant?</u></h1>
+    <input type="radio", name="question1", id="correct1", class="opt"><input value="Phloem", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Roots", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Xylem", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question1", class="opt"><input value="Leaves", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="plant.jpg", style="border-radius: 20px; margin-left: 450px; width: 150px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 2: In a magnet, where is the magnetism the strongest?</u></h1>
+    <input type="radio", name="question2", class="opt"><input value="South Pole", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", class="opt"><input value="North Pole", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", id="correct2", class="opt"><input value="Both Poles", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question2", class="opt"><input value="Middle of magnet", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="magnet.png", style="border-radius: 20px; margin-right: 900px; width: 175px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 3: During photosysthesis, what do plants take in?</u></h1>
+    <input type="radio", name="question3", class="opt"><input value="Nitrogen", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question3", class="opt"><input value="Oxygen", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question3", class="opt"><input value="Argon", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question3", id="correct3", class="opt"><input value="Carbon Dioxide", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="plant_photosynthesis.png", style="border-radius: 20px; margin-left: 450px; width: 160px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 4: What is the distance between Earth and the Sun?</u></h1>
+    <input type="radio", name="question4", class="opt"><input value="150.37 million km", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt", id="correct4"><input value="151.37 million km", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt"><input value="150.48 million km", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question4", class="opt"><input value="151.48 million km", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="earth_and_sun_distance.jpg", style="border-radius: 20px; margin-right: 950px; width: 275px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 5: What occurs when the Earth come in-between the Sun and moon?</u></h1>
+    <input type="radio", name="question5", class="opt"><input value="Solar Eclipse", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", class="opt"><input value="Thunderstorm", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", class="opt"><input value="Solar Storm", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question5", id="correct5", class="opt"><input value="Lunar Eclipse", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="lunar_eclipse.png", style="border-radius: 20px; margin-left: 700px; width: 400px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 6: What type of reaction happens when heat is given out?</u></h1>
+    <input type="radio", name="question6", class="opt"><input value="Freezing", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", class="opt"><input value="Melting", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", id="correct6", class="opt"><input value="Exothermic Reaction", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question6", class="opt"><input value="Endothermic Reaction", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="exothermic reaction.jpg", style="border-radius: 20px; margin-right: 900px; width: 200px; height: 200px; margin-top: -200px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <h1 style="font-family: Cascadia Code; font-size: 50px; font-weight: bolder; color: red; background-color: white; border-radius: 20px;"><u>Question 7: Who is known as the Missile Man of India?</u></h1>
+    <input type="radio", name="question7", class="opt"><input value="Sardar Vallabhai Patel", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", id="correct7", class="opt"><input value="A.P.J Abdul Kalam", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", class="opt"><input value="Srinivasa Ramanujan", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <input type="radio", name="question7", class="opt"><input value="Vikram Sarabhai", style="border: none; outline: none; background-color: transparent; font-family: Calibri; font-size: inherit; font-size: 40px;"><br>
+    <img src="unknown.png", style="border-radius: 20px; margin-left: 750px; width: 200px; height: 200px; margin-top: -200px; border-radius: 100px;">
+    <br>
+    <br>
+    <hr style="border: skyblue; border-width: 5px; border-style: solid; border-radius: 20px;">
+    <br>
+    <br>
+    <br>
+    <input type="submit", name="Submit", value="Submit", onclick="result()", id="submit">
+</div>
+</body>
+</html>
+
+<!-- Cascadia Code -->

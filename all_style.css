@@ -1,0 +1,292 @@
+#body2 {
+    text-align: center;
+    background: linear-gradient(rgb(39, 39, 39), rgb(83, 83, 83), gray);
+    background: linear-gradient(gray, rgb(83, 83, 83), rgb(39, 39, 39));
+}
+
+#body1 {
+    text-align: center;
+    background-color: rgb(150, 150, 150);
+}
+
+
+#dps_logo:hover {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+    margin-left: 10px;
+}
+
+#dps_logo {
+    float: right;
+    width: 170px;
+    height: 170px;
+    border-radius: 90px;
+}
+
+.menu {
+    background: linear-gradient(to right, red, orange);
+    cursor: pointer;
+    top: 10;
+    left: -20;
+    position: fixed;
+    z-index: 10;
+    margin: inherit;
+    margin-left: 89%;
+    border-radius: 20px;
+    text-align: left;
+    justify-content: left;
+}
+
+a {
+    font-style: italic;
+    font-family: calibri;
+    font-weight: bolder;
+    padding-right: 15px;
+    color: black;
+    font-size: 27px;
+}
+
+#theModal {
+    text-align: center;
+    justify-content: center;
+    margin-left: -30%;
+    background-color: gainsboro;
+}
+
+dialog {
+    padding: 40px;
+}
+
+#close {
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    float: right;
+    margin-top: -30px;
+    margin-right: -30px;
+}
+
+#close:hover {
+    color: darkred;
+    cursor: pointer;
+}
+
+#thingy1 {
+    overflow-y: scroll;
+    width: 250px;
+    border-color: black;
+    border-width: 3px;
+    border-style: dotted;
+    margin-left: 50px;
+    height: 350px;
+    padding-left: 15px;
+    padding-top: -10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-left: 14%;
+}
+
+#thingy2 {
+    overflow-y: scroll;
+    border-color: black;
+    border-width: 3px;
+    border-style: dotted;
+    margin-left: 50px;
+    width: 250px;
+    height: 350px;
+    padding-left: 15px;
+    padding-top: -10px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    margin-left: 71%;
+    margin-top: -410px;
+}
+
+#main_heading:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#buttoney1 {
+    color: black;
+    background: linear-gradient(to right, rgb(69, 202, 255), rgb(188, 209, 0), rgb(0, 196, 26));
+    font-size: 50px;
+    border-style: double;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#buttoney1:hover{
+    cursor: pointer;
+}
+
+#back1:hover {
+    cursor: pointer;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#back {
+    font-size: 10px;
+    border-width: 0px;
+    float: left;
+    background-color: rgb(150, 150, 150);
+}
+
+#back1 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#buttoney2 {
+    color: black;
+    background: linear-gradient(to right, rgb(69, 202, 255), rgb(188, 209, 0), rgb(0, 196, 26));
+    font-size: 50px;
+    border-style: double;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#buttoney2:hover{
+    cursor: pointer;
+}
+
+#a {
+    font-style: italic;
+    font-family: Lucida Calligraphy;
+    font-weight: bolder;
+    color: rgb(0, 136, 195);
+    font-size: 20px;
+}
+
+#buttoney3 {
+    color: black;
+    background: linear-gradient(to right, rgb(69, 202, 255), rgb(188, 209, 0), rgb(0, 196, 26));
+    font-size: 50px;
+    border-style: double;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#buttoney3:hover{
+    cursor: pointer;
+}
+
+#buttoney4 {
+    color: black;
+    background: linear-gradient(to right, rgb(69, 202, 255), rgb(188, 209, 0), rgb(0, 196, 26));
+    font-size: 50px;
+    border-style: double;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#buttoney4:hover{
+    cursor: pointer;
+}
+
+#thingy1 {
+  
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    
+    -moz-animation: my-animation 10s linear infinite;
+    -webkit-animation: my-animation 10s linear infinite;
+    animation: my-animation 10s linear infinite;
+  }
+
+  #thingy2 {
+    
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      
+      -moz-animation: my-animation1 10s linear infinite;
+      -webkit-animation: my-animation1 10s linear infinite;
+      animation: my-animation1 10s linear infinite;
+    }
+  
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-50%); }
+    to { -webkit-transform: translateX(50%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    to {
+      -moz-transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+  }
+  
+  @-webkit-keyframes my-animation1 {
+    from { -webkit-transform: translateX(50%); }
+    to { -webkit-transform: translateX(-50%); }
+  }
+  
+  @keyframes my-animation1 {
+    from {
+      -moz-transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+    to {
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+
+  #rocket {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    margin-bottom: -25px;
+  }
+
+  .opt {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  #submit {
+    background-color: greenyellow;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  #submit:hover {
+    background-color: rgba(173, 255, 47, 0.5);
+  }

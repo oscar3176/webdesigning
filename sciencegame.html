@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>Science Club</title>
+        <link rel = "shortcut icon" href = "science_logo.jpg">
+        <script src="main.js"></script>
+        <link rel = "stylesheet", href = "all_style.css">
+    </head>
+<body id="body1">
+    <div id="solarGame">
+    <button id="back", onclick="back()"><img id="back1", src="goback.png"></button>
+    <ul class="menu">
+        <li><a style="font-size: 20px;", href="#solarGame">Solar System Info</a></li>
+        <br>
+        <li><a style="font-size: 20px;", href="#innerplanetMass">How much would you weigh? (inner planets)</a></li>
+        <br>
+        <li><a style="font-size: 20px;", href="#outerplanetMass">How much would you weigh? (outer planets)</a></li>
+    </ul>
+    <h1 style="font-size: 70px; margin-right: 130px; font-family: algerian; font-weight: 500; font-style: italic; color: white;">Solar Sytem</h1>
+    <br>
+    <h2><i>Click on the planets or the sun to know about their mass and diameter</i></h2>
+    <iframe src="https://scratch.mit.edu/projects/embed/1022623016/" width="900", height="500"></iframe>
+    <br>
+    <br>
+    <br>
+    <hr>
+    </div>
+    <div id="innerplanetMass">
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Mercury</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="mercuryEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkMERCURY()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="mercuryAnswer"></p>
+        <br>
+        <br>
+        <hr>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Venus</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="venusEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkVENUS()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="venusAnswer"></p>
+        <br>
+        <br>
+        <hr>
+    </div>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Mars</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="marsEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkMARS()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="marsAnswer"></p>
+        <br>
+        <br>
+        <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="asteroid_belt_part.png", style="width: 100%;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="outerplanetMass">
+        <hr>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Jupiter</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="jupiterEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkJUPITER()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="jupiterAnswer"></p>
+        <br>
+        <br>
+        <hr>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Saturn</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="saturnEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkSATURN()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="saturnAnswer"></p>
+        <br>
+        <br>
+        <hr>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Uranus</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="uranusEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkURANUS()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="uranusAnswer"></p>
+        <br>
+        <br>
+        <hr>
+        <h2 style="font-size: 50px; font-family: Castellar; font-weight: bold; color: white;">Neptune</h2>
+        <h3 style="font-size: 30px; font-family: calibri; font-weight: 200; color: black;">Enter your weight(in kg) - </h3>
+        <input type="number", style="border-radius: 20px; font-size: 25px;", id="neptuneEARTHWEIGHT">
+        <br>
+        <br>
+        <button onclick="checkNEPTUNE()", style="font-size: 35px; background: linear-gradient(rgb(0, 228, 0), rgb(1, 108, 1)); border-radius: 20px;">Check</button>
+        <br>
+        <p style="font-size: 30px; font-style: calibri; font-weight: bolder;" id="neptuneAnswer"></p>
+        <br>
+        <br>
+        <hr>
+    </div>
+</body>
+</html>
